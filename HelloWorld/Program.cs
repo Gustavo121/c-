@@ -46,6 +46,9 @@ namespace HelloWorld
             var modeloDoProduto = 2323;
             */
 
+            /*
+             * UTILIZANDO DYNAMIC, POSSO TER UMA VARIAVEL COM VARIOS TIPOS DIFERENTES
+             
             dynamic cor_favorita = "Vermelho";
 
             Console.WriteLine(cor_favorita);
@@ -57,9 +60,20 @@ namespace HelloWorld
             cor_favorita = 321123.233f;
 
             Console.WriteLine(cor_favorita);
+            */
+
+            /*
+             * UTILIZO CONST PARA COLOCAR UM VALOR QUE NAO VAI SER ALTERADO;
+            const float PI = 3.145565656f;
+            */
+
+            string nome = "";
+            Console.WriteLine("Escreva seu nome: ");
+            nome = Console.ReadLine();
+            Console.WriteLine("Seu nome é: ");
+            Console.WriteLine(nome);
 
             Console.ReadLine();
-
         }
     }
 }
