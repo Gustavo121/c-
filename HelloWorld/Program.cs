@@ -66,12 +66,33 @@ namespace HelloWorld
              * UTILIZO CONST PARA COLOCAR UM VALOR QUE NAO VAI SER ALTERADO;
             const float PI = 3.145565656f;
             */
-
+            /*
             string nome = "";
             Console.WriteLine("Escreva seu nome: ");
             nome = Console.ReadLine();
             Console.WriteLine("Seu nome é: ");
             Console.WriteLine(nome);
+            */
+
+
+            int numeroQualquer = 20 + 20 - 80;
+            int numeroMult = 10 * 90;
+            int numeroDiv = 5 / 2; // quando divide 2 numero inteiros, c# tras o result inteiro
+            // ex: result correto é 2.5, porem ele so tras o 2 como result.
+
+            float numeroDecimal = 5.0f / 2; // neste caso o numero com a casa decimal aparece no result.
+            // ex: mudei o tipo da variavel e coloquei um numero decimal.
+
+            int ordemSinais = 2 + 2 * 10; // ficar atendo sempre a ordem de execussão de sinais
+
+            int ordemSinais2 = (2 + 2) * 10; // sempre executa o que tiver em () primeiro.
+
+            Console.WriteLine(numeroQualquer);
+            Console.WriteLine(numeroMult);
+            Console.WriteLine(numeroDiv);
+            Console.WriteLine(numeroDecimal);
+            Console.WriteLine(ordemSinais);
+            Console.WriteLine(ordemSinais2);
 
             Console.ReadLine();
         }
