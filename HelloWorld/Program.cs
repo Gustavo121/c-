@@ -74,7 +74,7 @@ namespace HelloWorld
             Console.WriteLine(nome);
             */
 
-
+            /*
             int numeroQualquer = 20 + 20 - 80;
             int numeroMult = 10 * 90;
             int numeroDiv = 5 / 2; // quando divide 2 numero inteiros, c# tras o result inteiro
@@ -93,7 +93,39 @@ namespace HelloWorld
             Console.WriteLine(numeroDecimal);
             Console.WriteLine(ordemSinais);
             Console.WriteLine(ordemSinais2);
+            */
 
+            /*
+            if (1 >= 20) // SE
+            {
+                Console.WriteLine("É verdade!");
+            }
+            else if (20 != 20)
+            {
+                Console.WriteLine("Executou Elseif!");
+            }
+            else  // SE NÃO
+            {
+                Console.WriteLine("É mentira!");    
+            }
+            */
+
+            int a = 10;
+            int b = 20;
+            int c = 2;
+
+            if (a > b) // SE
+            {
+                Console.WriteLine("É verdade!");
+            }
+            else if (a > c)
+            {
+                Console.WriteLine("Executou Elseif!");
+            }
+            else  // SE NÃO
+            {
+                Console.WriteLine("É mentira!");
+            }
             Console.ReadLine();
         }
     }
