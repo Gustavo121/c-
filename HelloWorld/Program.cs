@@ -162,6 +162,7 @@ namespace HelloWorld
                 Console.WriteLine("É mentira!");
             }
             */
+            /*
             Console.WriteLine("Digite sua idade:");
             int idade = int.Parse(Console.ReadLine()); // Parse muda de string para inteiro
 
@@ -180,7 +181,36 @@ namespace HelloWorld
             {
                 Console.WriteLine("Você é um idoso!");
             }
+            */
+
+            //ExibirMsg();
+            //GerarPreco(60, "Curso de Node.js");
+            GerarPreco(60);
+            GerarPreco(-21260);
+
             Console.ReadLine();
+        }
+
+        private static void ExibirMsg()
+        {
+            Console.WriteLine("Esse sistema é show de bola!");
+            Console.WriteLine("Estou usando funções");
+            Console.WriteLine("Bem vindo!");
+        }
+
+        /*
+        private static void GerarPreco(int preco, string nome)
+        {
+            Console.WriteLine("Nome do produto: " + nome);
+            Console.WriteLine(preco);
+        }
+        */
+
+        private static void GerarPreco(int preco)
+        {
+            int precoAbs = Math.Abs(preco); // Assim tenho ctz que o numero é positivo utilizando Abs.
+            int valorFinal = precoAbs + (2 * precoAbs);
+            Console.WriteLine("Valor final: " + valorFinal);
         }
     }
 }
