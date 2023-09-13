@@ -185,8 +185,21 @@ namespace HelloWorld
 
             //ExibirMsg();
             //GerarPreco(60, "Curso de Node.js");
-            GerarPreco(60);
-            GerarPreco(-21260);
+
+            //GerarPreco(60);
+            //GerarPreco(-21260);
+            /*
+            string valor = Console.ReadLine();
+            Console.WriteLine(valor);
+            */
+
+            //Console.WriteLine(Math.Abs(-60));
+
+            int soma1 = Somar(1, 2, 3);
+            int soma2 = Somar(100, 200, 300);
+
+            Console.WriteLine(soma1);
+            Console.WriteLine(soma2);
 
             Console.ReadLine();
         }
@@ -212,5 +225,12 @@ namespace HelloWorld
             int valorFinal = precoAbs + (2 * precoAbs);
             Console.WriteLine("Valor final: " + valorFinal);
         }
+
+        private static int Somar(int a, int b, int c) 
+        {
+            int resultadoFinal = a + b + c;
+            return resultadoFinal;
+        }
+
     }
 }
