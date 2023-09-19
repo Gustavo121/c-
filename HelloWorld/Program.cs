@@ -194,12 +194,33 @@ namespace HelloWorld
             */
 
             //Console.WriteLine(Math.Abs(-60));
-
+            /*
             int soma1 = Somar(1, 2, 3);
             int soma2 = Somar(100, 200, 300);
 
             Console.WriteLine(soma1);
             Console.WriteLine(soma2);
+            */
+
+            string produto1 = "Sea of Thieves";
+            string produto2 = "FIFA";
+            string produto3 = "Minecraft";
+            string produto4 = "Half-Life";
+            string produto5 = "Portal";
+            string produto6 = "CS";
+
+            //ex. Array
+
+            string[] produtos = new string[5] { 
+                "Sea of Thieves",
+                "FIFA",
+                "Minecraft",
+                "Half-Life",
+                "Portal"
+            };
+
+            produtos[1] = "FIFA 2023";
+            Console.WriteLine(produtos[1]);
 
             Console.ReadLine();
         }
