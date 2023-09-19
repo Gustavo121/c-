@@ -201,7 +201,7 @@ namespace HelloWorld
             Console.WriteLine(soma1);
             Console.WriteLine(soma2);
             */
-
+            /*
             string produto1 = "Sea of Thieves";
             string produto2 = "FIFA";
             string produto3 = "Minecraft";
@@ -219,9 +219,49 @@ namespace HelloWorld
                 "Portal"
             };
 
+            int[] valores = { 40, 50, 60, 70, 20 };
+
             produtos[1] = "FIFA 2023";
             Console.WriteLine(produtos[1]);
+            */
 
+            string cor = "Verde";
+
+            //ex. Switch
+            //Não consigo colocar operadores condicionais... neste caso use o if, else if
+            switch (cor) {
+                case "Vermelho":
+                    Console.WriteLine("Sua cor favorita é vermelho!");
+                    break;
+                case "Amarelo":
+                    Console.WriteLine("Sua cor favorita é Amarelo");
+                    break;
+                case "Azul":
+                    Console.WriteLine("Sua cor favorita é Azul");
+                    break;
+                case "Rosa":
+                    Console.WriteLine("Sua cor favorita é Rosa");
+                    break;
+                default:
+                    Console.WriteLine("Sua cor favorita eu não sei!");
+                    break;
+            }
+
+            //ex. if / else if
+            /*
+            if(cor == "Vermelho") 
+            {
+                Console.WriteLine("Sua cor favorita é vermelho!");
+            }
+            else if(cor == "Amarelo")
+            {
+                Console.WriteLine("Sua cor favorita é Amarelo");
+            }
+            else if (cor == "Azul") 
+            {
+                Console.WriteLine("Sua cor favorita é Azul");
+            }
+            */
             Console.ReadLine();
         }
 
