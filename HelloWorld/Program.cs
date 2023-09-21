@@ -7,8 +7,19 @@ namespace HelloWorld
 {
     internal class Program
     {
+        // enum ja vem com indices por padrão começando por 0
+        // Posso modificar o indice... ex. enum Cor { Azul = 34, Verde = 56, Amarelo, Vermelho }
+        enum Cor { Azul, Verde, Amarelo, Vermelho }
+
+
         static void Main(string[] args)
         {
+            Cor corFavorita = Cor.Vermelho;
+            Cor corFavoritaDaCarla = Cor.Azul;
+
+            Console.WriteLine((int)corFavorita); // mostra o indice
+            Console.WriteLine(corFavoritaDaCarla);
+            Console.WriteLine((Cor)2);
             // TIPOS DE VARIAVEIS
 
             // Int - -156 como 32334     Números inteiros
@@ -224,7 +235,8 @@ namespace HelloWorld
             produtos[1] = "FIFA 2023";
             Console.WriteLine(produtos[1]);
             */
-
+            /*
+             
             string cor = "Verde";
 
             //ex. Switch
@@ -246,7 +258,7 @@ namespace HelloWorld
                     Console.WriteLine("Sua cor favorita eu não sei!");
                     break;
             }
-
+            */
             //ex. if / else if
             /*
             if(cor == "Vermelho") 
