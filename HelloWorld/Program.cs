@@ -9,17 +9,50 @@ namespace HelloWorld
     {
         // enum ja vem com indices por padrão começando por 0
         // Posso modificar o indice... ex. enum Cor { Azul = 34, Verde = 56, Amarelo, Vermelho }
-        enum Cor { Azul, Verde, Amarelo, Vermelho }
+
+        // enum Cor { Azul, Verde, Amarelo, Vermelho }
+
+        enum Opcao { Criar = 1, Deletar, Editar, Listar, Atualizar }
 
 
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Selecione uma das opções abaixo: ");
+            Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
+            int index = int.Parse(Console.ReadLine());
+            Opcao opcaoSelecionada = (Opcao)index;
+
+            switch (opcaoSelecionada)
+            { 
+                case Opcao.Criar:
+                    Console.WriteLine("Você quer criar algo!");
+                    break;
+                case Opcao.Deletar:
+                    Console.WriteLine("DELETE! DELETE IMEDIATAMENTE");
+                    break;
+                case Opcao.Editar:
+                    Console.WriteLine("Editar é muito bom!");
+                    break;
+                case Opcao.Listar:
+                    Console.WriteLine("Listando o conteudo!");
+                    break;
+                case Opcao.Atualizar:
+                    Console.WriteLine("Atualização feita!");
+                    break;
+                default:
+                    Console.WriteLine("Opção não encontrada!");
+                    break;
+            }
+
+            /*
             Cor corFavorita = Cor.Vermelho;
             Cor corFavoritaDaCarla = Cor.Azul;
 
             Console.WriteLine((int)corFavorita); // mostra o indice
             Console.WriteLine(corFavoritaDaCarla);
-            Console.WriteLine((Cor)2);
+            Console.WriteLine((Cor)2); // pode ser desta forma tambem
+            */
             // TIPOS DE VARIAVEIS
 
             // Int - -156 como 32334     Números inteiros
