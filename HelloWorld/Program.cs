@@ -17,7 +17,18 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
+            // while - Enquanto um condição for verdadeira ela vai repetir um bloco de codigo
+            // Muito semelhante ao if, porem while repete a condição enquanto ela for verdadeira, so para no momento que ficar falsa
 
+            int contador = 0;
+            while (contador < 10) 
+            {
+                Console.WriteLine(contador);
+                Console.WriteLine("Rodando o while!");
+                contador++;
+            }
+            Console.WriteLine("FIM DA LINHA!!");
+            /*
             Console.WriteLine("Selecione uma das opções abaixo: ");
             Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
             int index = int.Parse(Console.ReadLine());
@@ -44,6 +55,7 @@ namespace HelloWorld
                     Console.WriteLine("Opção não encontrada!");
                     break;
             }
+            */
 
             /*
             Cor corFavorita = Cor.Vermelho;
