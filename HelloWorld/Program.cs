@@ -19,11 +19,25 @@ namespace HelloWorld
             //foreach - serve para percorrer arrays
 
             string[] palavras = { "Gustavo", "Gouvêa", "Guia do Programador", "Formação", "Node", "Curso de C#", "Udemy!"};
+            
+            for(int contador = 0; contador < palavras.Length ; contador++)
+            {
+                Console.WriteLine(contador);
+                Console.WriteLine(palavras[contador]);
+            }
+            Console.WriteLine("=============================================");
+            for(int contador2 = palavras.Length-1; contador2 >= 0 ; contador2--)
+            {
+                Console.WriteLine(contador2);
+                Console.WriteLine(palavras[contador2]);
+            }
 
+            /*
             foreach (string palavra in palavras) // Para cada palavra no array palavras, repita o código
             {
                 Console.WriteLine(palavra);
             }
+            */
             // while - Enquanto um condição for verdadeira ela vai repetir um bloco de codigo
             // Muito semelhante ao if, porem while repete a condição enquanto ela for verdadeira, so para no momento que ficar falsa
             /*
