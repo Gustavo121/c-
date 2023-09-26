@@ -10,16 +10,23 @@ namespace HelloWorld
         // enum ja vem com indices por padrão começando por 0
         // Posso modificar o indice... ex. enum Cor { Azul = 34, Verde = 56, Amarelo, Vermelho }
 
-        // enum Cor { Azul, Verde, Amarelo, Vermelho }
-
+        enum Cor { Azul, Verde, Amarelo, Vermelho }
         enum Opcao { Criar = 1, Deletar, Editar, Listar, Atualizar }
 
 
         static void Main(string[] args)
         {
+            //foreach - serve para percorrer arrays
+
+            string[] palavras = { "Gustavo", "Gouvêa", "Guia do Programador", "Formação", "Node", "Curso de C#", "Udemy!"};
+
+            foreach (string palavra in palavras) // Para cada palavra no array palavras, repita o código
+            {
+                Console.WriteLine(palavra);
+            }
             // while - Enquanto um condição for verdadeira ela vai repetir um bloco de codigo
             // Muito semelhante ao if, porem while repete a condição enquanto ela for verdadeira, so para no momento que ficar falsa
-
+            /*
             int contador = 0;
             while (contador < 10) 
             {
@@ -27,15 +34,16 @@ namespace HelloWorld
                 Console.WriteLine("Rodando o while!");
                 contador++;
             }
-
+            */
             // do while - é igual o while, porem por mais que seja false sua condição ele retorna 1 vez
-
+            /*
             int contador2 = 0;
             do
             {
                 Console.WriteLine("do while!");
                 contador2++;
             } while (contador2 < 20);
+            */
             Console.WriteLine("FIM DA LINHA!!");
 
             /*
