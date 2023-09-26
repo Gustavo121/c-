@@ -27,7 +27,17 @@ namespace HelloWorld
                 Console.WriteLine("Rodando o while!");
                 contador++;
             }
+
+            // do while - é igual o while, porem por mais que seja false sua condição ele retorna 1 vez
+
+            int contador2 = 0;
+            do
+            {
+                Console.WriteLine("do while!");
+                contador2++;
+            } while (contador2 < 20);
             Console.WriteLine("FIM DA LINHA!!");
+
             /*
             Console.WriteLine("Selecione uma das opções abaixo: ");
             Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
